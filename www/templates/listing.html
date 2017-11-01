@@ -1,0 +1,24 @@
+<ion-view view-title="Gurbani Parchar">
+<div ng-init="getListingsInMainDirectory()">
+	<ion-header-bar class="bar-positive" style="height:145px;">
+		<img class="main-logo" src="http://www.gurbaniparcharmission.com/wp-content/themes/gurbaniparcharmission/images/logo.png">
+	  </ion-header-bar>
+  <ion-content header-shrink scroll-event-interval="5">
+  	<div class="list">
+  		<a class="item item-thumbnail-left" style="border: none;">
+		      	<img src="" style="    border: none;"/>
+		      	<h2></h2>
+	    	</a>
+  	</div>
+    <div class="list">
+    	<div ng-repeat="dirItem in dirLIsting.results">
+	    	<a class="item item-thumbnail-left" ng-click="getDirectoryListing(dirItem.sub_dir_url)">
+		      	<img src="{{dirItem.image}}">
+		      	<h2 style="word-wrap: break-word;white-space: initial;">{{dirItem.title}}</h2>
+		      	<p>{{dirItem.files}} files</p>
+	    	</a>
+    	</div>
+    </div>
+  </ion-content>
+</div>  
+</ion-view>

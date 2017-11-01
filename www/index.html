@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+	<script src="lib/ionic-ion-header-shrink/ionic.headerShrink.js"></script>
+   <script src="js/swiper.js"></script>
+    <!--<script src="../bower_components/angular/angular.js"></script>-->
+    <script src="js/angular-swiper.js"></script>   
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/audio-controller.js"></script>
+    
+  </head>
+<body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+  </body>
+<!--  <body ng-app="starter" ng-controller="HomeController">
+<ion-side-menus>        
+      
+      <ion-pane ion-side-menu-content>
+        <ion-nav-view name="baseView"></nav-view>
+      </ion-pane> 
+
+      <ion-side-menu side="left">
+         <ion-nav-bar>
+	  <ion-nav-back-button>
+	</ion-nav-back-button>
+	</ion-nav-bar>
+        <ion-nav-view animation="slide-left-right" name="sideView"></ion-nav-view>
+      </ion-side-menu>
+    
+    </ion-side-menus>
+    
+    <script id="side.html" type="text/ng-template">
+      <ion-view ng-init="getMenuItems()">
+        <ion-content class="menu">
+          <div class="list">
+          	<img class="side-menu-logo" src="http://www.gurbaniparcharmission.com/wp-content/themes/gurbaniparcharmission/images/logo.png"/>
+          </div>
+       <div class="list">   
+		<ul class="list" >
+		    	<a ng-repeat="menuItem in menuItems" class="item side-menu-links" ng-click="getSubMenuItems(menuItem.sub_dir_url,menuItem.sub_dir_name)" ui-sref="side-item" >{{menuItem.sub_dir_name}}<i class="icon ion-ios-arrow-right pull-right"></i></a>
+		</ul>
+	</div>
+	<div class="list">
+		<ul class="list">
+	    		<a class="item side-menu-links" ui-sref="side-item" >About<i class="icon ion-ios-arrow-right pull-right"></i></a>
+	    	</ul>
+	</div>    	
+        </ion-content>
+      </ion-view>
+    </script>
+    
+     <script id="side-item.html" type="text/ng-template">
+      <ion-view title="{{subMenu.title}}" ng-init="getMenuItems()">
+        <ion-content has-header="true" padding="true">
+		<div class="list">   
+			<ul class="list" >
+			    	<a ng-repeat="subMenuItem in subMenu.items" class="item side-menu-links">{{subMenuItem.sub_dir_name}}<i class="icon ion-ios-arrow-right pull-right"></i></a>
+			</ul>
+		</div>
+
+        </ion-content>
+      </ion-view>
+    </script>
+  </body> -->
+</html>

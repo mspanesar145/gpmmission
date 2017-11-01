@@ -1,0 +1,166 @@
+<div ng-controller="HomeController" ng-init="getHomeScreenSliderData();getPageListingItems();getMarqueText();getMenuItems();">
+<ion-view view-title="Gurbani Parchar">
+	<header class="bar bar-header theme-color color-white">
+	 	<button class="button button-icon button-clear ion-navicon" ng-click="openSideMenuModal()"></button>
+        	<h1 class="title color-white bold" ng-click="#/app/common">Gurbani Parchar Mission</h1>
+        <button ng-if="backTrackArray.length > 0 && internetOn" class="button button-icon button-clear color-white" ng-click="backTarckAppScreen()">Back</button>
+         <button ng-if="backTrackArray.length == 0 && internetOn" class="button button-icon button-clear color-white" ng-click="exitFromApp()">Exit</button>
+         <button ng-if="retrieveItemsInCache[0].parent_dir != 'main' && !internetOn" class="button button-icon button-clear color-white" ng-click="backTrackListOfItemsInCache()">Back</button>
+       </header>
+  <ion-content class="has-header" on-scroll="callOnScroll()" ng-class="{'has-footer' : footerBar, 'has-no-footer' : !footerBar}">
+		<ion-refresher pulling-text="Pull to refresh"
+         refreshing-text="Loading..."
+         refreshing-icon="ion-loading-c"
+         pulling-icon="ion-ios7-arrow-thin-down"
+         on-refresh="doRefresh();">
+         </ion-refresher>
+	<div class="list" style="margin-bottom:15px;">
+		<marquee style="margin-top: 10px;font-size: 16px;">{{marqueText}}</marquee>
+		<!-- <p class="marque-text">{{marqueText}}</p> -->
+	</div>
+	<div class="list card" style="margin-top:-10px">
+		<!--<ion-scroll direction="x" scrollbar-x="false" overflow-scroll="false" >
+			<img ng-if="homeSliderData" class="full-image" ng-click="showDataOnSliderClick(sliderData.link)" ng-repeat="sliderData in homeSliderData" src="{{sliderData.img}}" style="width:360px; height:226px;"/>
+			    <img ng-if="!homeSliderData" class="full-image" src="img/default.jpg" style="width:360px; height:226px;"/>
+
+			    <img class="full-image" src="img/1.jpg" style="width:360px; height:226px;"/>
+			    <img class="full-image" src="img/1.jpg" style="width:360px; height:226px;"/> 
+		 </ion-scroll>--> 
+		 <ks-swiper-container initial-slide="0" ng-if="!internetOn" speed="2000" loop="true" show-nav-buttons="false" slides-per-view="1" space-between="0" pagination-is-active="true" pagination-clickable="true" override-parameters="{effect: 'coverflow',coverflow: {rotate: 0,stretch: 0,depth: 100,modifier: 1,slideShadows : true}}" autoplay="5000" on-ready="onReadySwiper(swiper)">
+            <ks-swiper-slide class="swiper-slide">
+                <img src="img/1.jpg" width="100%">
+            </ks-swiper-slide>            
+        </ks-swiper-container>
+		<ks-swiper-container initial-slide="0"  ng-if="internetOn && homeSliderData" speed="300" loop="true" show-nav-buttons="false" slides-per-view="1" space-between="0" pagination-is-active="true" pagination-clickable="true" autoplay="5000"  on-ready="onReadySwiper(swiper)">
+            <ks-swiper-slide class="swiper-slide" ng-repeat="sliderData in homeSliderData">
+                <img src="{{sliderData.img}}" width="100%" ng-click="getItemsFromAPI(sliderData)">
+            </ks-swiper-slide>            
+        </ks-swiper-container>
+	</div>
+	
+	<div class="list" ng-if="page == 'directory'">
+	    <a class="item item-avatar home-page-list-items" ng-repeat="item in listOfItemsInPage" ng-if="item.sub_dir_name" ng-click="getItemsFromAPI(item)">
+	     	<img class="no-radius" src="{{item.sub_dir_jpg}}" onerror="this.src='img/default.jpg'"/>
+	      <h2 class="margin-top">{{item.sub_dir_name}}</h2>
+	    </a>
+	</div>
+	<div class="list" ng-if="page == 'cache'">
+	    <a class="item item-avatar home-page-list-items" ng-repeat="item in retrieveItemsInCache" ng-if="item.sub_dir_name" ng-click="getItemsFromCache(item)">
+	     	<img class="no-radius" src="{{item.sub_dir_jpg}}" onerror="this.src='img/default.jpg'"/>
+	      <h2 class="margin-top">{{item.sub_dir_name}}</h2>
+	    </a>
+	</div>
+	
+	<ion-list can-swipe="true" ng-if="page == 'list'  && !internetOn">
+	      <ion-item class="item songs-page-list-items"  ng-repeat="songObj in retrieveItemsInCache" ng-if="songObj.file_name" ng-click="takeActionOnSongClickInCache(songObj)">
+	          <!-- <img class="no-radius" src="{{songObj.sub_dir_jpg}}" onerror="this.src='img/default.jpg'"/> -->
+
+	        <i class="icon ion-ios-cloud-download-outline song-list-action-icon" ng-if="!downloadedSongList[songObj.file_name] || !downloadedSongList[songObj.file_name].status == 'downloaded'" ></i>
+	        <ion-spinner class="spinner-energized song-list-action-icon" ng-if="downloadedSongList[songObj.file_name] && downloadedSongList[songObj.file_name].status == 'downloading'"></ion-spinner>
+	        <span class="download-progress-counter" ng-if="downloadedSongList[songObj.file_name].status == 'downloading' && downloadProgress[songObj.file_name] > 0 && downloadProgress[songObj.file_name] < 99">{{downloadProgress[songObj.file_name]}}%</span>
+	        <i class="icon ion-play song-list-action-icon" ng-if="downloadedSongList[songObj.file_name] && downloadedSongList[songObj.file_name].status == 'downloaded' && (!songListReadyToPlay[songObj.file_name] || songListReadyToPlay[songObj.file_name] == 'stop')"></i>
+	        <i class="icon ion-pause song-list-action-icon" ng-if="downloadedSongList[songObj.file_name] && downloadedSongList[songObj.file_name].status == 'downloaded' && (songListReadyToPlay[songObj.file_name] && songListReadyToPlay[songObj.file_name] == 'playing')"></i>
+	       
+	        <h2 class="margin-top" class="song-list-item-title" style="margin-left:40px;"><span ng-if="songListReadyToPlay[songObj.file_name] != 'playing'">{{$index + 1}}</span><span ng-if="songListReadyToPlay[songObj.file_name] == 'playing'"><img src="img/equalizer.gif"/></span>{{songObj.file_name}}</h2>
+	        <p style="margin-left: 40px;">{{songObj.file_size}}</p>
+	        <ion-option-button class="button-assertive icon ion-trash-a" ng-if="downloadedSongList[songObj.file_name]" ng-click="deleteSong(songObj)"></ion-option-button>
+	      </ion-item>
+	</ion-list>
+
+
+	<ion-list can-swipe="true" ng-if="page == 'list' && internetOn">
+      <ion-item class="item songs-page-list-items"  ng-repeat="songObj in listOfItemsInPage" ng-if="songObj.file_name" ng-click="takeActionOnSongClick(songObj)">
+          <!-- <img class="no-radius" src="{{songObj.sub_dir_jpg}}" onerror="this.src='img/default.jpg'"/> -->
+
+        <i class="icon ion-ios-cloud-download-outline song-list-action-icon" ng-if="!downloadedSongList[songObj.file_name] || !downloadedSongList[songObj.file_name].status == 'downloaded'" ></i>
+        <ion-spinner class="spinner-energized song-list-action-icon" ng-if="downloadedSongList[songObj.file_name] && downloadedSongList[songObj.file_name].status == 'downloading'"></ion-spinner>
+        <span class="download-progress-counter" ng-if="downloadedSongList[songObj.file_name].status == 'downloading' && downloadProgress[songObj.file_name] > 0 && downloadProgress[songObj.file_name] < 99">{{downloadProgress[songObj.file_name]}}%</span>
+        <i class="icon ion-play song-list-action-icon" ng-if="downloadedSongList[songObj.file_name] && downloadedSongList[songObj.file_name].status == 'downloaded' && (!songListReadyToPlay[songObj.file_name] || songListReadyToPlay[songObj.file_name] == 'stop')"></i>
+        <i class="icon ion-pause song-list-action-icon" ng-if="downloadedSongList[songObj.file_name] && downloadedSongList[songObj.file_name].status == 'downloaded' && (songListReadyToPlay[songObj.file_name] && songListReadyToPlay[songObj.file_name] == 'playing')"></i>
+       
+        <h2 class="margin-top" class="song-list-item-title" style="margin-left:40px;"><span ng-if="songListReadyToPlay[songObj.file_name] != 'playing'">{{$index + 1}}</span><span ng-if="songListReadyToPlay[songObj.file_name] == 'playing'"><img src="img/equalizer.gif"/></span>{{songObj.file_name}}</h2>
+        <p style="margin-left: 40px;">{{songObj.file_size}}</p>
+        <ion-option-button class="button-assertive icon ion-trash-a" ng-if="downloadedSongList[songObj.file_name]" ng-click="deleteSong(songObj)"></ion-option-button>
+      </ion-item>
+</ion-list>
+			
+  </ion-content>
+	<ion-footer-bar class="theme-color" ng-class="{'hide-bar-footer':!footerBar}" ng-if="!footerSongDetail['song']">
+		<div class="row">
+			  <a class="col button icon ion-home" style="background-color:#38358E;color:#fff;"></a>
+			  <a class="col button icon ion-android-contact" style="background-color:#38358E;color:#fff;"></a>
+			  <a class="col button icon ion-email" style="background-color:#38358E;color:#fff;"></a>
+		</div>
+	</ion-footer-bar>
+	<ion-footer-bar ng-if="footerSongDetail['song']">
+	    <div class="row">
+	    	<!-- <i class="icon ion-ios-close-outline footer-song-close-btn" ng-click="hideFooterSong()"></i> -->
+	      <div class="audio-controls col col-40">
+		    <a ng-click="rewindForward('back')" style="padding:0px 5px 0px 0px;"><img src="img/rewind.png" height="30px" width="auto" ></a>
+		    <a id="play" ng-click="playSongFromFooter(footerSongDetail);" ng-if="footerSongDetail['status'] == 'pause'" style="padding: 0px 5px 0px 5px;font-size: 40px;"><i class="icon ion-ios-play"></i></a>
+		    <a id="pause" ng-click="pauseSongFromFooter();" ng-if="footerSongDetail['status'] == 'playing'" style="padding: 0px 5px 0px 5px;font-size: 40px;"><i class="icon ion-ios-pause"></i></a>
+		     <a ng-click="rewindForward('forward')" style="padding: 0px 0px 0px 5px;"><img src="img/forward.png" height="30px" width="auto"></a>
+  		</div>
+	        
+	        <div class="col-60 song-detail-footer">
+	            <div style="font-size: 14px;font-weight: 500;white-space: nowrap;word-wrap: break-word;" class="artist">{{footerSongDetail['song']}}</div>
+	            <!--<p style="color: #9e9e9e;padding: 0px;margin-top: -3px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;" class="artist">{{footerSongDetail['artist']}}</p>-->
+	             <div class="progress-bar-div" style="width:100%">   
+	             	<div class="progress" style="height:5px;position:relative;width:60%;background:#ccc;margin-top: 3px;">
+	             		<span id="progress-amount" style="background-color: #595;height:100%;display:block;width:0;"></span>
+	             	</div>
+	             	<div class="duration" style="position: absolute;right: 30px;top: 20px;"></div>
+	             </div>	
+	        </div>
+	    </div>
+  </ion-footer-bar>
+</ion-view>
+
+<script id="side-menu-modal.html" type="text/ng-template">
+    <ion-modal-view class="side-menu">
+    	<div class="ion-modal-content-custom">
+	      <ion-content class="padding">
+	      		<button ng-if="menuItemsToShow == 'categories' && !isMenuOpened" class="button button-icon button-clear ion-navicon side-menu-icon" ng-click="openSideMenuModal()"></button>
+
+				<button ng-if="menuItemsToShow == 'categories' && isMenuOpened" class="button button-icon button-clear ion-close-round side-menu-icon" ng-click="openSideMenuModal()"></button>
+	      		
+
+				<div ng-if="menuItemsToShow == 'artists'" class="submenu-header-items" style="position: relative;width: 100%;display: block;height: 35px;">
+		 			<button class="button button-icon ion-ios-arrow-thin-left color-white side-menu-back-btn" ng-click="backTrackSideMenu('categories')"></button>
+		 			<button class="button button-icon button-clear ion-close-round side-menu-close-icon" style="float: right;" ng-click="openSideMenuModal()"></button>
+	        		<h1 class="title bold side-menu-title" ng-if="showSideMenuHeaderTitle" style="position: absolute;top: -10px;left: 0px;">{{directory}}</h1>
+        		</div>
+		        <div class="side-menu-logo-container" ng-if="menuItemsToShow == 'categories'">
+				      <img class="side-menu-logo-img" src="http://www.gurbaniparcharmission.com/wp-content/themes/gurbaniparcharmission/images/logo.png?x63143">
+				</div>
+				<hr/>
+				<ul class="list" style="padding-top: 10px;" ng-if="menuItemsToShow == 'categories'"> 
+					<li class="item item-icon-right menu-items" ng-repeat="item in listOfItemsInSideMenu" ng-if="item.sub_dir_name" ng-click="listingMenuItems(item,'artists')">
+	    					{{item.sub_dir_name}}
+	    					<i class="icon ion-ios-arrow-right"></i>
+	  				</li>
+	  				<li class="item item-icon-right menu-items" ng-repeat="item in sideMenuSecondPart" ng-click="closeSideMenuModal();getItemsFromAPIForQuickLinks(item);">
+	    					{{item.text}}
+	    					<i class="icon ion-ios-arrow-right" ng-if="item.sub_dir_type"></i>
+	  				</li>
+				</ul>
+			<div ng-if="menuItemsToShow == 'artists' && artist.sub_dir_name" ng-repeat="artist in items">
+          		<ion-item class="item-stable"
+                    ng-click="toggleAccordian(artist)"
+                    ng-class="{active: isArtistShown(artist)}">
+              		<i class="icon" ng-if="artist.sub_dir_type == 'dirs'" ng-class="isArtistShown(artist) ? 'ion-minus' : 'ion-plus'"></i>
+            		&nbsp;
+            	{{artist.sub_dir_name}}
+          		</ion-item>
+          		<ion-item class="item-accordion  item-icon-right" ng-if="album.sub_dir_name"
+                    ng-repeat="album in sideMenuAlbumList[artist.sub_dir_name]"
+                    ng-show="isArtistShown(artist)" ng-click="closeSideMenuModal();getItemsFromAPI(album)">
+            		{{album.sub_dir_name}}
+            		<!-- <i class="icon ion-ios-arrow-right"></i>-->
+         		 </ion-item>
+        	</div>
+	      </ion-content>
+	    </div>
+  </ion-modal-view>
+</script>
+</div>

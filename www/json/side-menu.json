@@ -1,0 +1,763 @@
+{
+    "main": {
+        "0": {
+            "sub_dir_name": "Audio Books",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Audio Books/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Audio Books/bhairandheersingh.jpg",
+            "parent_dir": "main"
+        },
+        "1": {
+            "sub_dir_name": "Katha",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/sukhmanisahib.jpg",
+            "parent_dir": "main"
+        },
+        "dir_slider": "http://www.gurbaniparcharmission.com/media/dir_slider.php"
+    },
+    "main--Audio Books": {
+        "0": {
+            "sub_dir_name": "Jail Cheethian",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail Cheethian/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail Cheethian/jarnailsingh.jpg",
+            "parent_dir": "main--Audio Books"
+        },
+        "dir_slider": "http://www.gurbaniparcharmission.com/media/Audio%20Books/dir_slider.php"
+    },
+    "main--Audio Books--Jail Cheethian": {
+        "0": {
+            "file_name": "000 Intro.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/000 Intro.mp3",
+            "file_size": "529.84 kB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "1": {
+            "file_name": "001 Gursikhee Daa Prem Kive Laggaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/001 Gursikhee Daa Prem Kive Laggaa.mp3",
+            "file_size": "20.96 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "2": {
+            "file_name": "002 Jigyaasaa Te Behbiltaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/002 Jigyaasaa Te Behbiltaa.mp3",
+            "file_size": "16.23 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "3": {
+            "file_name": "003 Aatmik Vairaag And Ammrit Chhaknaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/003 Aatmik Vairaag And Ammrit Chhaknaa.mp3",
+            "file_size": "31.07 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "4": {
+            "file_name": "004 Gurmat Naam Dee Khoj.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/004 Gurmat Naam Dee Khoj.mp3",
+            "file_size": "14.63 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "5": {
+            "file_name": "005 Gurmat Naam Daa Parkaash.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/005 Gurmat Naam Daa Parkaash.mp3",
+            "file_size": "15.99 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "6": {
+            "file_name": "006 Akaalee Jot De Darshan.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/006 Akaalee Jot De Darshan.mp3",
+            "file_size": "12.98 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "7": {
+            "file_name": "007 Nadar Anandee Bigaas.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/007 Nadar Anandee Bigaas.mp3",
+            "file_size": "11.06 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "8": {
+            "file_name": "008 Maayee Gulaab Kaur Daa Daras Milaap.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/008 Maayee Gulaab Kaur Daa Daras Milaap.mp3",
+            "file_size": "9.43 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "9": {
+            "file_name": "009 Khalsa College Amritsar Vich.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/009 Khalsa College Amritsar Vich.mp3",
+            "file_size": "5.80 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "10": {
+            "file_name": "010 Griftaaree  And Mukadamaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/010 Griftaaree  And Mukadamaa.mp3",
+            "file_size": "21.83 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "11": {
+            "file_name": "011 Multan Jail Vich Taseehe Te Bhukh-harrtaal.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/011 Multan Jail Vich Taseehe Te Bhukh-harrtaal.mp3",
+            "file_size": "28.91 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "12": {
+            "file_name": "012 Multan To Hazaari Bag Jail Noo.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/012 Multan To Hazaari Bag Jail Noo.mp3",
+            "file_size": "33.67 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "13": {
+            "file_name": "013 Darogaa Wadhava Ram De  Julam Te Sakhtiaan.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/013 Darogaa Wadhava Ram De  Julam Te Sakhtiaan.mp3",
+            "file_size": "23.55 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "14": {
+            "file_name": "014 Sonaa Banaoun Dee Ajeeb Kathaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/014 Sonaa Banaoun Dee Ajeeb Kathaa.mp3",
+            "file_size": "21.61 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "15": {
+            "file_name": "015 Singhaa Daa Jail Vicho Haran Honaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/015 Singhaa Daa Jail Vicho Haran Honaa.mp3",
+            "file_size": "24.63 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "16": {
+            "file_name": "016 Kirpaa Singh Di Antaryamtaa Ate Jail Vich Hor Sakhtiaan.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/016 Kirpaa Singh Di Antaryamtaa Ate Jail Vich Hor Sakhtiaan.mp3",
+            "file_size": "52.53 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "17": {
+            "file_name": "017 Insaaf Ate Hakaan Layee Jado-jahid.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/017 Insaaf Ate Hakaan Layee Jado-jahid.mp3",
+            "file_size": "52.54 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "18": {
+            "file_name": "018 Madras Haate Deeaa Jailaan Noo Chaale.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/018 Madras Haate Deeaa Jailaan Noo Chaale.mp3",
+            "file_size": "26.49 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "19": {
+            "file_name": "019 Rajmandri Jail Vich.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/019 Rajmandri Jail Vich.mp3",
+            "file_size": "30.01 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "20": {
+            "file_name": "020 Nagpur Jail Noo Chaale.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/020 Nagpur Jail Noo Chaale.mp3",
+            "file_size": "29.32 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "21": {
+            "file_name": "021 Karraake Daa Morchaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/021 Karraake Daa Morchaa.mp3",
+            "file_size": "54.39 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "22": {
+            "file_name": "022 Nikkar Te Kachhere Daa Savaal Te Hor Jhagre.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/022 Nikkar Te Kachhere Daa Savaal Te Hor Jhagre.mp3",
+            "file_size": "44.79 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "23": {
+            "file_name": "023 Sikhaa Dee Shakshiat Ate Sikhee Spirit.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/023 Sikhaa Dee Shakshiat Ate Sikhee Spirit.mp3",
+            "file_size": "41.31 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "24": {
+            "file_name": "024 Nagpur To Lahore Jail Noo.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/024 Nagpur To Lahore Jail Noo.mp3",
+            "file_size": "25.30 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "25": {
+            "file_name": "025 Bhagat Singh Naal Mulaakaat.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/025 Bhagat Singh Naal Mulaakaat.mp3",
+            "file_size": "16.36 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "26": {
+            "file_name": "026 Jail To Rihaaee Te Ghar Pahunchnaa.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/026 Jail To Rihaaee Te Ghar Pahunchnaa.mp3",
+            "file_size": "7.91 MB",
+            "parent_dir": "main--Audio Books--Jail Cheethian"
+        },
+        "dir_jpg": "http://www.gurbaniparcharmission.com/media/Audio%20Books/Jail%20Cheethian/jarnailsingh.jpg"
+    },
+    "main--Katha": {
+        "0": {
+            "sub_dir_name": "Giani Sher Singh Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani Sher Singh Ji/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani Sher Singh Ji/sukhmanisahib.jpg",
+            "parent_dir": "main--Katha"
+        },
+        "1": {
+            "sub_dir_name": "Giani Thakur Singh Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani Thakur Singh Ji/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani Thakur Singh Ji/sukhmanisahib.jpg",
+            "parent_dir": "main--Katha"
+        },
+        "2": {
+            "sub_dir_name": "Sant Gurbachan Singh Ji Bhindranwale",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Sant Gurbachan Singh Ji Bhindranwale/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Sant Gurbachan Singh Ji Bhindranwale/sukhmanisahib.jpg"
+        },
+        "3": {
+            "sub_dir_name": "Sant Isher Singh Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Sant Isher Singh Ji/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "4": {
+            "sub_dir_name": "Sant Jarnail Singh Ji Bhindranwale",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Sant Jarnail Singh Ji Bhindranwale/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Sant Jarnail Singh Ji Bhindranwale/sukhmanisahib.jpg"
+        },
+        "5": {
+            "sub_dir_name": "Sant Kartar Singh JI Bhindranwale",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Sant Kartar Singh JI Bhindranwale/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Sant Kartar Singh JI Bhindranwale/sukhmanisahib.jpg"
+        },
+        "dir_slider": "http://www.gurbaniparcharmission.com/media/Katha/dir_slider.php"
+    },
+    "main--Katha--Giani Sher Singh Ji": {
+        "0": {
+            "sub_dir_name": "Katha Pracheen Panth Parkash",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha Pracheen Panth Parkash/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha Pracheen Panth Parkash/sukhmanisahib.jpg",
+            "parent_dir": "main--Katha--Giani Sher Singh Ji"
+        },
+        "dir_slider": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/dir_slider.php"
+    },
+    "main--Katha--Giani Sher Singh Ji--Katha Pracheen Panth Parkash": {
+        "0": {
+            "file_name": "Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.01.-.2014-10-01.-.Sri.Guru.Panth.Prakash.01.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha%20Pracheen%20Panth%20Parkash/Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.01.-.2014-10-01.-.Sri.Guru.Panth.Prakash.01.mp3",
+            "file_size": "51.91 MB",
+            "parent_dir": "main--Katha--Giani Sher Singh Ji--Katha Pracheen Panth Parkash"
+        },
+        "1": {
+            "file_name": "Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.02.-.2014-10-02.-.Sri.Guru.Panth.Prakash.02.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha%20Pracheen%20Panth%20Parkash/Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.02.-.2014-10-02.-.Sri.Guru.Panth.Prakash.02.mp3",
+            "file_size": "53.55 MB",
+            "parent_dir": "main--Katha--Giani Sher Singh Ji--Katha Pracheen Panth Parkash"
+        },
+        "2": {
+            "file_name": "Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.03.-.2014-10-03.-.Captain.Murrey.-.Guru.Nanak.Dev.Ji.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha%20Pracheen%20Panth%20Parkash/Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.03.-.2014-10-03.-.Captain.Murrey.-.Guru.Nanak.Dev.Ji.mp3",
+            "file_size": "44.42 MB",
+            "parent_dir": "main--Katha--Giani Sher Singh Ji--Katha Pracheen Panth Parkash"
+        },
+        "3": {
+            "file_name": "Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.04.-.2014-10-04.-.Guru.Nanak.Dev.Ji.02.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha%20Pracheen%20Panth%20Parkash/Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.04.-.2014-10-04.-.Guru.Nanak.Dev.Ji.02.mp3",
+            "file_size": "44.10 MB",
+            "parent_dir": "main--Katha--Giani Sher Singh Ji--Katha Pracheen Panth Parkash"
+        },
+        "4": {
+            "file_name": "Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.05.-.2014-10-05.-.Guru.Tegh.Bahadur.Ji.-.Kashmiri.Pandit.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha%20Pracheen%20Panth%20Parkash/Nihang.Giani.Sher.Singh.(Ambala.wale)--Pracheen.Panth.Parkash.Katha.-.Part.05.-.2014-10-05.-.Guru.Tegh.Bahadur.Ji.-.Kashmiri.Pandit.mp3",
+            "file_size": "11.68 MB",
+            "parent_dir": "main--Katha--Giani Sher Singh Ji--Katha Pracheen Panth Parkash"
+        },
+        "dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Sher%20Singh%20Ji/Katha%20Pracheen%20Panth%20Parkash/sukhmanisahib.jpg"
+    },
+    "main--Katha--Giani Thakur Singh Ji": {
+        "0": {
+            "sub_dir_name": "Aasa Ki Vaar",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa Ki Vaar/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa Ki Vaar/sukhmanisahib.jpg",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji"
+        },
+        "1": {
+            "sub_dir_name": "Anand Sahib",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand Sahib/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand Sahib/sukhmanisahib.jpg",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji"
+        },
+        "2": {
+            "sub_dir_name": "Ardas Khalse Di",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Ardas Khalse Di/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Ardas Khalse Di/sukhmanisahib.jpg"
+        },
+        "3": {
+            "sub_dir_name": "Atem Gyaan",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Atem Gyaan/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Atem Gyaan/sukhmanisahib.jpg"
+        },
+        "4": {
+            "sub_dir_name": "Baawan Akhri",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Baawan Akhri/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Baawan Akhri/sukhmanisahib.jpg"
+        },
+        "5": {
+            "sub_dir_name": "Baba Deep Singh Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Baba Deep Singh Ji/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Baba Deep Singh Ji/sukhmanisahib.jpg"
+        },
+        "6": {
+            "sub_dir_name": "BabaAjitSinghJi AteBabaJujharSinghJi",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/BabaAjitSinghJi AteBabaJujharSinghJi/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/BabaAjitSinghJi AteBabaJujharSinghJi/sukhmanisahib.jpg"
+        },
+        "7": {
+            "sub_dir_name": "Bara Maha By Month",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Bara Maha By Month/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Bara Maha By Month/sukhmanisahib.jpg"
+        },
+        "8": {
+            "sub_dir_name": "Barah Maha",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Barah Maha/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Barah Maha/sukhmanisahib.jpg"
+        },
+        "9": {
+            "sub_dir_name": "Bhagat Bani",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Bhagat Bani/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Bhagat Bani/sukhmanisahib.jpg"
+        },
+        "10": {
+            "sub_dir_name": "Chaupai Sahib",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Chaupai Sahib/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Chaupai Sahib/sukhmanisahib.jpg"
+        },
+        "11": {
+            "sub_dir_name": "Dakhni Onkar",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Dakhni Onkar/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Dakhni Onkar/sukhmanisahib.jpg"
+        },
+        "12": {
+            "sub_dir_name": "Guru Arjun Dev Ji Di Shaheedi",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Guru Arjun Dev Ji Di Shaheedi/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Guru Arjun Dev Ji Di Shaheedi/sukhmanisahib.jpg"
+        },
+        "13": {
+            "sub_dir_name": "Guru Nanak Parkash",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Guru Nanak Parkash/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Guru Nanak Parkash/sukhmanisahib.jpg"
+        },
+        "14": {
+            "sub_dir_name": "IitalyInJan2011",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/IitalyInJan2011/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/IitalyInJan2011/sukhmanisahib.jpg"
+        },
+        "15": {
+            "sub_dir_name": "Ithaas Guru Nank Dev Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Ithaas Guru Nank Dev Ji/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Ithaas Guru Nank Dev Ji/sukhmanisahib.jpg"
+        },
+        "16": {
+            "sub_dir_name": "Ithaas Patshahi Dasveen",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Ithaas Patshahi Dasveen/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Ithaas Patshahi Dasveen/sukhmanisahib.jpg"
+        },
+        "17": {
+            "sub_dir_name": "Jaap Sahib",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Jaap Sahib/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Jaap Sahib/sukhmanisahib.jpg"
+        },
+        "18": {
+            "sub_dir_name": "Japji Sahab",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Japji Sahab/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Japji Sahab/sukhmanisahib.jpg"
+        },
+        "19": {
+            "sub_dir_name": "Laawan",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Laawan/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Laawan/sukhmanisahib.jpg"
+        },
+        "20": {
+            "sub_dir_name": "Maas Maas Kar Murakh Jhagde",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Maas Maas Kar Murakh Jhagde/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Maas Maas Kar Murakh Jhagde/sukhmanisahib.jpg"
+        },
+        "21": {
+            "sub_dir_name": "Mata Sahib Kaur Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mata Sahib Kaur Ji/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mata Sahib Kaur Ji/sukhmanisahib.jpg"
+        },
+        "22": {
+            "sub_dir_name": "Mata Sahib kaur Gurudwara",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mata Sahib kaur Gurudwara/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mata Sahib kaur Gurudwara/sukhmanisahib.jpg"
+        },
+        "23": {
+            "sub_dir_name": "Mother Day Katha",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mother Day Katha/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mother Day Katha/sukhmanisahib.jpg"
+        },
+        "24": {
+            "sub_dir_name": "Mukti Naama",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mukti Naama/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Mukti Naama/sukhmanisahib.jpg"
+        },
+        "25": {
+            "sub_dir_name": "Raag Maala Baare Bharam Bhulekhe",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Raag Maala Baare Bharam Bhulekhe/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Raag Maala Baare Bharam Bhulekhe/sukhmanisahib.jpg"
+        },
+        "26": {
+            "sub_dir_name": "Rehar Piyari Mujh ko",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Rehar Piyari Mujh ko/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Rehar Piyari Mujh ko/sukhmanisahib.jpg"
+        },
+        "27": {
+            "sub_dir_name": "Rehat Maryada",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Rehat Maryada/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Rehat Maryada/sukhmanisahib.jpg"
+        },
+        "28": {
+            "sub_dir_name": "RehatMaryada2",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/RehatMaryada2/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "29": {
+            "sub_dir_name": "Rehraas Sahib",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Rehraas Sahib/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "30": {
+            "sub_dir_name": "RehrasSahib2",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/RehrasSahib2/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/RehrasSahib2/sukhmanisahib.jpg"
+        },
+        "31": {
+            "sub_dir_name": "Sabad Hjaare",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sabad Hjaare/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "32": {
+            "sub_dir_name": "Salok Bhagat Kabir Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Salok Bhagat Kabir Ji/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "33": {
+            "sub_dir_name": "Shaheedi Guru Arjun Dev Sahib Ji",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Shaheedi Guru Arjun Dev Sahib Ji/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "34": {
+            "sub_dir_name": "Shastra Naam Mala",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Shastra Naam Mala/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "35": {
+            "sub_dir_name": "Sidh Goshat",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sidh Goshat/listing_api.php",
+            "sub_dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sidh Goshat/sukhmanisahib.jpg"
+        },
+        "36": {
+            "sub_dir_name": "Sikh Di Rehat",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sikh Di Rehat/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "37": {
+            "sub_dir_name": "Sikh Sing Te Pakhan Di Sikh",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sikh Sing Te Pakhan Di Sikh/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "38": {
+            "sub_dir_name": "Slok Shekh Farid JI",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Slok Shekh Farid JI/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "39": {
+            "sub_dir_name": "Sohilaa Sahib",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sohilaa Sahib/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "40": {
+            "sub_dir_name": "Sukhmani Sahib",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Sukhmani Sahib/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "41": {
+            "sub_dir_name": "Tav.P. Savaiye",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Tav.P. Savaiye/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "42": {
+            "sub_dir_name": "Test",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Test/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "43": {
+            "sub_dir_name": "VideoTOMP3",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/VideoTOMP3/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "44": {
+            "sub_dir_name": "Waheguru Gurmantar Hai",
+            "sub_dir_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Waheguru Gurmantar Hai/listing_api.php",
+            "sub_dir_jpg": ""
+        },
+        "dir_slider": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/dir_slider.php"
+    },
+    "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar": {
+        "0": {
+            "file_name": "01-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/01-Aasa Ki Vaar.mp3",
+            "file_size": "7.02 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "1": {
+            "file_name": "02-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/02-Aasa Ki Vaar.mp3",
+            "file_size": "6.62 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "2": {
+            "file_name": "03-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/03-Aasa Ki Vaar.mp3",
+            "file_size": "4.50 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "3": {
+            "file_name": "04-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/04-Aasa Ki Vaar.mp3",
+            "file_size": "6.26 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "4": {
+            "file_name": "05-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/05-Aasa Ki Vaar.mp3",
+            "file_size": "6.26 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "5": {
+            "file_name": "06-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/06-Aasa Ki Vaar.mp3",
+            "file_size": "5.47 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "6": {
+            "file_name": "07-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/07-Aasa Ki Vaar.mp3",
+            "file_size": "5.72 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "7": {
+            "file_name": "08-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/08-Aasa Ki Vaar.mp3",
+            "file_size": "6.76 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "8": {
+            "file_name": "09-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/09-Aasa Ki Vaar.mp3",
+            "file_size": "5.65 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "9": {
+            "file_name": "10-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/10-Aasa Ki Vaar.mp3",
+            "file_size": "6.62 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "10": {
+            "file_name": "11-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/11-Aasa Ki Vaar.mp3",
+            "file_size": "6.58 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "11": {
+            "file_name": "12-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/12-Aasa Ki Vaar.mp3",
+            "file_size": "5.03 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "12": {
+            "file_name": "13-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/13-Aasa Ki Vaar.mp3",
+            "file_size": "5.97 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "13": {
+            "file_name": "14-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/14-Aasa Ki Vaar.mp3",
+            "file_size": "6.23 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "14": {
+            "file_name": "15-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/15-Aasa Ki Vaar.mp3",
+            "file_size": "5.75 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "15": {
+            "file_name": "16-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/16-Aasa Ki Vaar.mp3",
+            "file_size": "5.95 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "16": {
+            "file_name": "17-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/17-Aasa Ki Vaar.mp3",
+            "file_size": "6.46 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "17": {
+            "file_name": "18-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/18-Aasa Ki Vaar.mp3",
+            "file_size": "5.79 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "18": {
+            "file_name": "19-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/19-Aasa Ki Vaar.mp3",
+            "file_size": "4.29 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "19": {
+            "file_name": "20-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/20-Aasa Ki Vaar.mp3",
+            "file_size": "7.01 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "20": {
+            "file_name": "21-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/21-Aasa Ki Vaar.mp3",
+            "file_size": "6.94 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "21": {
+            "file_name": "22-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/22-Aasa Ki Vaar.mp3",
+            "file_size": "5.95 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "22": {
+            "file_name": "23-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/23-Aasa Ki Vaar.mp3",
+            "file_size": "6.19 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "23": {
+            "file_name": "24-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/24-Aasa Ki Vaar.mp3",
+            "file_size": "6.07 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "24": {
+            "file_name": "25-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/25-Aasa Ki Vaar.mp3",
+            "file_size": "5.67 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "25": {
+            "file_name": "26-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/26-Aasa Ki Vaar.mp3",
+            "file_size": "6.61 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "26": {
+            "file_name": "27-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/27-Aasa Ki Vaar.mp3",
+            "file_size": "5.81 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "27": {
+            "file_name": "28-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/28-Aasa Ki Vaar.mp3",
+            "file_size": "5.10 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "28": {
+            "file_name": "29-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/29-Aasa Ki Vaar.mp3",
+            "file_size": "6.94 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "29": {
+            "file_name": "30-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/30-Aasa Ki Vaar.mp3",
+            "file_size": "6.21 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "30": {
+            "file_name": "31-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/31-Aasa Ki Vaar.mp3",
+            "file_size": "6.54 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "31": {
+            "file_name": "32-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/32-Aasa Ki Vaar.mp3",
+            "file_size": "6.63 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "32": {
+            "file_name": "33-Aasa Ki Vaar.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/33-Aasa Ki Vaar.mp3",
+            "file_size": "4.77 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Aasa Ki Vaar"
+        },
+        "dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Aasa%20Ki%20Vaar/sukhmanisahib.jpg"
+    },
+    "main--Katha--Giani Thakur Singh Ji--Anand Sahib": {
+        "0": {
+            "file_name": "31-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/31-Anand Sahib.mp3",
+            "file_size": "7.03 MB",
+            "parent_dir": "main--Katha--Giani Thakur Singh Ji--Anand Sahib"
+        },
+        "1": {
+            "file_name": "32-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/32-Anand Sahib.mp3",
+            "file_size": "7.40 MB"
+        },
+        "2": {
+            "file_name": "33-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/33-Anand Sahib.mp3",
+            "file_size": "8.20 MB"
+        },
+        "3": {
+            "file_name": "34-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/34-Anand Sahib.mp3",
+            "file_size": "7.73 MB"
+        },
+        "4": {
+            "file_name": "35-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/35-Anand Sahib.mp3",
+            "file_size": "7.52 MB"
+        },
+        "5": {
+            "file_name": "36-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/36-Anand Sahib.mp3",
+            "file_size": "7.49 MB"
+        },
+        "6": {
+            "file_name": "37-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/37-Anand Sahib.mp3",
+            "file_size": "7.71 MB"
+        },
+        "7": {
+            "file_name": "38-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/38-Anand Sahib.mp3",
+            "file_size": "7.96 MB"
+        },
+        "8": {
+            "file_name": "39-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/39-Anand Sahib.mp3",
+            "file_size": "3.75 MB"
+        },
+        "9": {
+            "file_name": "40-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/40-Anand Sahib.mp3",
+            "file_size": "3.59 MB"
+        },
+        "10": {
+            "file_name": "41-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/41-Anand Sahib.mp3",
+            "file_size": "3.34 MB"
+        },
+        "11": {
+            "file_name": "42-Anand Sahib.mp3",
+            "file_url": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/42-Anand Sahib.mp3",
+            "file_size": "3.19 MB"
+        },
+        "dir_jpg": "http://www.gurbaniparcharmission.com/media/Katha/Giani%20Thakur%20Singh%20Ji/Anand%20Sahib/sukhmanisahib.jpg"
+    }
+}

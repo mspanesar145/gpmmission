@@ -1,0 +1,288 @@
+/* Empty. Add your own CSS if you like */
+.main-logo {
+    margin:0 auto;
+	width:100px;
+}
+
+.center {
+	text-align:center;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.color-black {
+	    color: #000;
+}
+.color-white {
+	color:#fff !important;
+}
+.header-menu {
+	height: 95px;
+}
+.split-cols {
+	border-radius: 5px;
+	padding: 0px;
+	margin:5px;
+        border: 1px solid #ccc;
+       	height: 100%;
+}
+
+.split-cols img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    max-height: 55px;
+}
+
+.button:after{
+	color: #fff;
+}
+.hide-bar-header {
+	display:none;
+}
+.has-no-header {
+	top:0;
+}
+
+.hide-bar-footer {
+	display:none;
+}
+.has-no-footer {
+	bottom:0;
+}
+i.icon.ion-arrow-left-c {
+    color: #000;
+}
+.no-radius {
+	border-radius:0px !important;
+}
+.margin-top {
+	margin-top:10px !important;
+}
+.margin-left {
+    margin-left:10px !important;
+}
+.margin-right {
+    margin-right:10px !important;
+}
+.margin-bottom {
+    margin-bottom:10px !important;
+}
+.theme-color {
+ 	background-color:#38358E;
+}
+.ion-navicon:before {
+    color: #fff;
+}
+.side-menu-logo {
+    height: 130px;
+    margin: auto 25%;
+    padding: 10px;
+}
+.pull-right {
+	float: right;
+}
+.side-menu-links {
+	text-decoration:none;
+}
+.home-page-list-items img{
+    top: 3px !important;
+    left: 10px !important;
+    max-width: 65px !important;
+    max-height: 65px !important;
+}
+
+.home-page-list-items h2 {
+	    margin-left: 10px !important;
+}
+.songs-page-list-items img{
+    top: 10px !important;
+    left: 10px !important;
+    max-width: 65px !important;
+    max-height: 65px !important;
+}
+.song-list-action-icon {
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+}
+.download-progress-counter {
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    margin-top: 15px;
+    right: 10px;
+}
+.song-footer {
+    background-color: #f5f3f3;
+    height: 50px !important;
+    padding: 10px;
+}
+.song-detail-footer {
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+.width-30 {
+    width: 30px;
+}   
+.side-menu {
+    width: 80%;
+    border-right: 2px solid #ccc;
+}
+.side-menu-logo-container {
+    text-align: center;
+    height: 25%;
+    width: 100%;
+    margin: auto 30%;
+}
+.side-menu-logo-img {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.menu-items > li {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.active .modal-backdrop-bg {
+    opacity: .5; 
+}
+.modal-backdrop-bg {
+    -webkit-transition: opacity 600ms ease-in-out;
+    transition: opacity 600ms ease-in-out;
+    background-color: #000;
+    opacity: 0; 
+} 
+
+.ion-ios-arrow-right:before {
+    font-size: 18px;
+}
+li.item.item-icon-right.menu-items {
+    font-weight:bold;
+    border:none;
+}
+.side-menu-header {
+    background-size: 0;
+}
+.side-menu-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.side-menu-close-icon {
+    margin-left: 5px;
+}
+.side-menu-close-icon.ion-close-round:before {
+    color:#01000a;
+    font-size: 22px;
+}
+
+.side-menu-back-btn {
+    margin-top: 5px;
+}
+.side-menu-icon.ion-navicon:before {
+    color:#38358E;
+    font-size: 35px;
+}
+.side-menu-icon.ion-close-round:before {
+    color:#38358E;
+    font-size: 22px;
+}
+.side-menu-back-btn.ion-ios-arrow-thin-left:before {
+    color: #01000a;
+    font-size: 30px;
+    font-weight: bold;
+}
+.side-menu-title{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 40px;
+}
+ion-item.item-stable.item.ng-binding {
+    border-bottom: 1px solid #ccc;
+    background: none;
+    padding-left: 0px;
+    padding-right: 25px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+i.icon.ion-plus {
+    position: absolute;
+    right: 10px;
+}
+i.icon.ion-minus {
+    position: absolute;
+    right: 10px;
+}
+ion-item.item-accordion.item-icon-right.item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 16px;
+}
+.item-content > h2 > span {
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    font-size: 18px;
+    background: #f9f8f8;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    vertical-align: middle;
+    padding-right: 10px;
+    width: 40px;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.ion-play:before {
+    color: #b9b9b9;
+}
+.ion-pause:before {
+    color: #b9b9b9;
+}
+i.icon.ion-ios-close-outline.footer-song-close-btn {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+i.icon.ion-ios-close-outline.footer-song-close-btn:before {
+    font-size: 30px;
+}
+
+.swiper-slide img {
+    height:auto;
+}
+.marque-text {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    padding-left: 10px;
+}
+.swiper-container {
+    margin-bottom: -10px;
+}
+.audio-controls {
+    display: block;
+    position: relative;
+    padding: 0px;
+    margin-top: -5px;
+}

@@ -1,0 +1,94 @@
+<div ng-controller="HomeController" ng-init="getListingOnMainCategoryClick('albums');getMenuItems();">
+<ion-view view-title="Gurbani Parchar">
+	<header class="bar bar-header theme-color color-white">
+	 	<button class="button button-icon button-clear ion-navicon" ng-click="openSideMenuModal()"></button>
+        	<h1 class="title color-white bold">Gurbani Parchar Mission</h1>
+        	<a class="button button-icon ion-home color-white" href="#/app/home" ></a>
+       </header>
+ <!-- <ion-content class="has-header has-footer" on-scroll="callOnScroll()" ng-class="{'has-no-footer':!footerBar,'has-no-header':!headerBar}"> -->
+  <ion-content class="has-header" on-scroll="callOnScroll()" ng-class="{'has-footer' : footerBar, 'has-no-footer' : !footerBar}">
+	<div class="list">
+		<!-- <marquee>{{marqueText}}</marquee> -->
+		<p>Learn and understand the meaning of Gurbani from Shri Guru Granth Sahib</p>
+	</div>
+	<div class="list card">
+		<ion-scroll direction="x" scrollbar-x="false" overflow-scroll="false" >
+			    <img ng-if="homeSliderData" class="full-image" ng-click="showDataOnSliderClick(sliderData.link)" ng-repeat="sliderData in homeSliderData" src="{{sliderData.img}}" style="width:360px; height:226px;"/>
+			    <img ng-if="!homeSliderData" class="full-image" src="img/default.jpg" style="width:360px; height:226px;"/>
+		 </ion-scroll> 
+	</div>
+	
+	<div class="list">
+	    <a class="item item-avatar home-page-list-items" ng-repeat="menuItem in listingOnCategoryClick" ng-if="menuItem.sub_dir_name" ng-click="moveToSongListingPage(menuItem.sub_dir_url,menuItem)">
+	     	<img class="no-radius" src="{{menuItem.sub_dir_jpg}}" onerror="this.src='img/default.jpg'"/>
+	      <h2 class="margin-top">{{menuItem.sub_dir_name}}</h2>
+	    </a>
+	</div>
+			
+  </ion-content>
+	<ion-footer-bar ng-if="footerSongDetail['song']">
+	    <div class="row">
+	    	<!-- <i class="icon ion-ios-close-outline footer-song-close-btn" ng-click="hideFooterSong()"></i> -->
+	        <a id="play" class="col col-25 font-20 width-30" ng-click="playSongFromFooter(footerSongDetail);" ng-if="footerSongDetail['status'] == 'pause'"><i class="icon ion-ios-play"></i></a>
+	        <a id="pause" class="col col-25 font-20 width-30" ng-click="pauseSongFromFooter();" ng-if="footerSongDetail['status'] == 'playing'"><i class="icon ion-ios-pause"></i></a>
+	        <div class="col-75 song-detail-footer">
+	            <span  style="font-size: 18px;font-weight: 500;" class="artist">{{footerSongDetail['song']}}</span>
+	            <p style="color: #9e9e9e;padding: 0px;margin-top: -3px;" class="artist">{{footerSongDetail['artist']}}</p>
+	        </div>
+	    </div>
+  </ion-footer-bar>
+</ion-view>
+<script id="side-menu-modal.html" type="text/ng-template">
+    <ion-modal-view class="side-menu">
+    	<div class="ion-modal-content-custom">
+	      <ion-content class="padding">
+	      		<button ng-if="menuItemsToShow == 'categories'" class="button button-icon button-clear ion-navicon side-menu-icon" ng-click="openSideMenuModal()"></button>
+	 			<button ng-if="menuItemsToShow == 'artists'" class="button button-icon ion-ios-arrow-thin-left color-white side-menu-back-btn" ng-click="backTrackSideMenu('categories')"></button>
+        			<h1 class="title bold side-menu-title" ng-if="showSideMenuHeaderTitle">{{directory}}</h1>
+		        <div class="side-menu-logo-container" ng-if="menuItemsToShow == 'categories'">
+				      <img class="side-menu-logo-img" src="http://www.gurbaniparcharmission.com/wp-content/themes/gurbaniparcharmission/images/logo.png?x63143">
+				</div>
+				<hr/>
+				<ul class="list" style="padding-top: 10px;" ng-if="menuItemsToShow == 'categories'"> 
+					<li class="item item-icon-right menu-items" ng-repeat="item in listOfItemsInSideMenu" ng-if="item.sub_dir_name" ng-click="listingMenuItems(item.sub_dir_url,'artists')">
+	    					{{item.sub_dir_name}}
+	    					<i class="icon ion-ios-arrow-right"></i>
+	  				</li>
+				</ul>
+			<!--<div ng-if="menuItemsToShow == 'artists'">
+				<ul class="list" style="padding-top: 10px;"> 
+					<li class="item item-icon-right menu-items" ng-repeat="artist in items" ng-if="artist.sub_dir_name" ng-click="listingMenuItems(artist.sub_dir_url,'albums')">
+	    					{{artist.sub_dir_name}}
+	    					<i class="icon ion-arrow-right-c"></i>
+	  				</li>
+				</ul>
+			</div>
+			 <div ng-if="menuItemsToShow == 'albums'">
+				<ul class="list" style="padding-top: 10px;"> 
+					<li class="item item-icon-right menu-items" ng-repeat="album in items" ng-if="album.sub_dir_name" ng-click="listingMenuItems(album.sub_dir_url)">
+	    					{{album.sub_dir_name}}
+	    					<i class="icon ion-arrow-right-c"></i>
+	  				</li>
+				</ul>
+			</div> -->
+
+			<div ng-if="menuItemsToShow == 'artists' && artist.sub_dir_name" ng-repeat="artist in items">
+          		<ion-item class="item-stable"
+                    ng-click="toggleAccordian(artist)"
+                    ng-class="{active: isArtistShown(artist)}">
+              	<i class="icon" ng-class="isArtistShown(artist) ? 'ion-minus' : 'ion-plus'"></i>
+            		&nbsp;
+            	{{artist.sub_dir_name}}
+          		</ion-item>
+          		<ion-item class="item-accordion  item-icon-right" ng-if="album.sub_dir_name"
+                    ng-repeat="album in sideMenuAlbumList[artist.sub_dir_name]"
+                    ng-show="isArtistShown(artist)" ng-click="closeSideMenuModal();moveToSongListingPage(album.sub_dir_url,album)">
+            		{{album.sub_dir_name}}
+            		<!-- <i class="icon ion-ios-arrow-right"></i>-->
+         		 </ion-item>
+        	</div>
+	      </ion-content>
+	    </div>
+  </ion-modal-view>
+</script>
+</div>
